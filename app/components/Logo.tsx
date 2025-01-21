@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { sansitaOne } from '../layout';
+import { sansitaOne } from '../fonts';
 
 export default function Logo() {
   return (
