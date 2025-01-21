@@ -13,7 +13,13 @@ export default async function Home() {
   return (
     <div className="grid place-content-center min-h-screen p-4">
       <div className="flex flex-col gap-4">
+        <div>
+          Under construction... <br />
+          Here&apos;s your account instead.
+        </div>
+
         {session.user && <Profile user={session.user} />}
+
         <SignOutButton />
       </div>
     </div>

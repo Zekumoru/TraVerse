@@ -13,7 +13,7 @@ export default function Profile({ user }: { user: User }) {
           className="rounded-full"
         />
       )}
-      <span>{user.name}</span>
+      <span className="font-bold">{user.name}</span>
     </div>
   );
 }
