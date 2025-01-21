@@ -4,18 +4,30 @@ import GoogleSignInButton from '@/app/components/GoogleSignInButton';
 
 export default function SignInPage() {
   return (
-    <div className="grid content-center min-h-screen p-4 gap-6 text-5xl text-center leading-[72px]">
+    <div className="grid content-center min-h-screen p-4 gap-6 md:gap-4 text-5xl text-center leading-[72px]">
       <Logo />
 
       {/* Mobile */}
-      <div>
+      <div className="block md:hidden">
         Conversations
         <br /> made universal.
       </div>
-      <div className="font-bold">
+      <div className="font-bold block md:hidden">
         Just for <span className="text-primary-600">you</span>.
       </div>
       {/* End Mobile */}
+
+      {/* Desktop */}
+      <div className="hidden md:block mt-8">
+        Conversations made universal,{' '}
+        <span className="font-bold">
+          just for <span className="text-primary-600">you</span>.
+        </span>
+      </div>
+      <div className="hidden md:block text-xl">
+        Sign in with Google to get started traversing language barriers.
+      </div>
+      {/* End Desktop */}
 
       <GoogleSignInButton />
 

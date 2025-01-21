@@ -2,19 +2,17 @@ import Image from 'next/image';
 import { sansitaOne } from '../layout';
 
 export default function Logo() {
-  const logoSize = 40;
-
   return (
-    <div className="flex gap-5 text-[40px] justify-center">
+    <div className="flex gap-4 text-4xl justify-center md:text-5xl">
       <Image
         src="/logo.png"
         alt=""
-        width={logoSize}
-        height={logoSize}
-        className={`w-[${logoSize}px] h-[${logoSize}px]`}
+        width={40}
+        height={40}
+        className={`w-10 h-10 md:w-12 md:h-12`}
         unoptimized
       />
-      <div className={`${sansitaOne.className} text-4xl`}>
+      <div className={`${sansitaOne.className}`}>
         <span className="text-primary-600">Tra</span>
         <span className="text-primary-950">Verse</span>
       </div>
