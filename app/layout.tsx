@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Lato, Sansita } from 'next/font/google';
 import './globals.css';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+export const lato = Lato({
   subsets: ['latin'],
+  weight: ['100', '300', '400', '700', '900'],
 });
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+export const sansita = Sansita({
   subsets: ['latin'],
+  weight: ['400', '700', '800', '900'],
 });
 
 export const metadata: Metadata = {
@@ -42,11 +42,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${lato.className}`}>{children}</body>
     </html>
   );
 }
