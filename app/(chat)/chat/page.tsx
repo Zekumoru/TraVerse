@@ -21,9 +21,12 @@ export default async function ChatPage() {
         <header className="flex flex-col gap-4 p-5">
           <div className="flex gap-2 items-center">
             <Logo />
-            <SignOutButton className="px-2 ml-auto h-full flex items-center" />
+            <SignOutButton className="p-2 ml-auto h-full flex items-center hover:bg-primary-50 rounded-full transition cursor-pointer" />
             <div className="h-full flex items-center">
-              <MdSettings size={32} className="px-2 w-auto text-black-200" />
+              <MdSettings
+                size={32}
+                className="p-2 w-auto h-auto text-black-200"
+              />
             </div>
           </div>
           <div>
