@@ -3,11 +3,12 @@ import { sansitaOne } from '../fonts';
 
 type LogoProps = {
   showImage?: boolean;
+  className?: string;
 };
 
-export default function Logo({ showImage }: LogoProps) {
+export default function Logo({ className, showImage }: LogoProps) {
   return (
-    <div className="flex gap-4 text-4xl md:text-5xl">
+    <div className={`${className} flex gap-4 text-4xl`}>
       {showImage && (
         <Image
           src="/logo.png"
