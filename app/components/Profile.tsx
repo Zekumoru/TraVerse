@@ -8,12 +8,12 @@ export default function Profile({ user }: { user: User }) {
         <Image
           src={user.image}
           alt="Google profile picture"
-          width={48}
-          height={48}
+          width={40}
+          height={40}
           className="rounded-full"
         />
       )}
-      <span className="font-bold">{user.name}</span>
+      <span>{user.name}</span>
     </div>
   );
 }
