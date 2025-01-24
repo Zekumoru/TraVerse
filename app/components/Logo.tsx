@@ -7,7 +7,7 @@ type LogoProps = {
 
 export default function Logo({ showImage }: LogoProps) {
   return (
-    <div className="flex gap-4 text-4xl justify-center md:text-5xl">
+    <div className="flex gap-4 text-4xl md:text-5xl">
       {showImage && (
         <Image
           src="/logo.png"

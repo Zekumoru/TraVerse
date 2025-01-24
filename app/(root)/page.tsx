@@ -12,7 +12,9 @@ export default async function SignInPage() {
 
   return (
     <div className="grid content-center min-h-screen p-4 gap-6 md:gap-4 text-5xl text-center leading-[72px]">
-      <Logo showImage />
+      <div className="mx-auto">
+        <Logo showImage />
+      </div>
 
       {/* Mobile */}
       <div className="block md:hidden">
